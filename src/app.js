@@ -1,3 +1,3 @@
-import { sum } from "./math";
+import { sum } from "./math.js";
 
 console.log(sum(1, 2));
