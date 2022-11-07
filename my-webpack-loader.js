@@ -1,4 +1,4 @@
 module.exports = function myWebpackLoader(content) {
-  console.log(content);
-  return;
+  console.log("mywebpackloader가 실행함");
+  return content;
 };
