@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpeg|gif|svg)$/,
-        loader: "file-loader",
+        loader: "url-loader",
         options: {
           publicPath: "./dist/",
           name: "[name].[ext]?[hash]",
