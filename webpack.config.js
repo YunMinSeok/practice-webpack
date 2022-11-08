@@ -16,11 +16,12 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpeg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         loader: "url-loader",
         options: {
           publicPath: "./dist/",
           name: "[name].[ext]?[hash]",
+          limit: 20000, //20kb
         },
       },
     ],
