@@ -1,4 +1,12 @@
-/*! 이것은 배너입니다. */
+/*!
+ * 
+ *         Build Date: 2022. 11. 9. 오후 9:50:34
+ *         Commit Version: 143334e
+ * 
+ *         Author: 윤민석
+ * 
+ *       
+ */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
