@@ -1,7 +1,7 @@
 /*!
  * 
- *         Build Date: 2022. 11. 9. 오후 9:50:34
- *         Commit Version: 143334e
+ *         Build Date: 2022. 11. 9. 오후 9:56:26
+ *         Commit Version: 04dba07
  * 
  *         Author: 윤민석
  * 
@@ -161,7 +161,7 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nyancat_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nyancat.jpg */ \"./src/nyancat.jpg\");\n\n\n\ndocument.addEventListener(\"DOMContentLoader\", () => {\n  document.body.innerHTML = `<img src= \"${_nyancat_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}\" />`;\n});\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nyancat_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nyancat.jpg */ \"./src/nyancat.jpg\");\n\n\n\ndocument.addEventListener(\"DOMContentLoader\", () => {\n  document.body.innerHTML = `<img src=\"${_nyancat_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}\" />`;\n});\n\nconsole.log(\"development\");\nconsole.log(\"http://dev.api.domain.com\");\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 

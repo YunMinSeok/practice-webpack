@@ -36,5 +36,9 @@ module.exports = {
         Author: ${childProcess.execSync("git config user.name")}
       `,
     }),
+    new webpack.DefinePlugin({
+      TWO: JSON.stringify("1+1"),
+      "api.domain": JSON.stringify("http://dev.api.domain.com"),
+    }),
   ],
 };
