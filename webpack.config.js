@@ -22,7 +22,6 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: "url-loader",
         options: {
-          publicPath: "./dist/",
           name: "[name].[ext]?[hash]",
           limit: 20000, //20kb
         },
@@ -43,6 +42,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      templateParameters: {
+        env: process.env.NODE_ENV === "development" ? "(개발용)" : "",
+      },
     }),
   ],
 };
