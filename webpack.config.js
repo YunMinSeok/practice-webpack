@@ -45,6 +45,13 @@ module.exports = {
       templateParameters: {
         env: process.env.NODE_ENV === "development" ? "(개발용)" : "",
       },
+      minify:
+        process.env.NODE_ENV === "production"
+          ? {
+              collapseWhitespace: true,
+              removeComments: true,
+            }
+          : false,
     }),
   ],
 };
