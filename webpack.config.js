@@ -37,6 +37,7 @@ module.exports = {
   },
   plugins: [
     new webpack.BannerPlugin({
+      // 결과물에 주석(배너) 추가 가능
       banner: `
         Build Date: ${new Date().toLocaleString()}
         Commit Version: ${childProcess.execSync("git rev-parse --short HEAD")}
@@ -48,6 +49,7 @@ module.exports = {
       "api.domain": JSON.stringify("http://dev.api.domain.com"),
     }),
     new HtmlWebpackPlugin({
+      // 동적으로 html 파일 생성 가능
       template: "./src/index.html",
       templateParameters: {
         env: process.env.NODE_ENV === "development" ? "(개발용)" : "",
@@ -60,8 +62,8 @@ module.exports = {
             }
           : false,
     }),
-    new CleanWebpackPlugin(),
-    ...(process.env.NODE_ENV === "production"
+    new CleanWebpackPlugin(), // 빌드전 아웃풀 폴더 정리
+    ...(process.env.NODE_ENV === "production" // 모듈에서 css 파일 분리
       ? [new MiniCssExtractPlugin({ filename: "[name].css" })]
       : []),
   ],
