@@ -1,1 +1,3 @@
-new Promise();
+document.addEventListener("DOMContentLoaded", () => {
+  window.alert("dd");
+});
