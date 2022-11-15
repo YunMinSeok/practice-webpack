@@ -1,3 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-  window.alert("dd");
-});
+console.log("------------------매우 긴 문장입니다.-------------------");
