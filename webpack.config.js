@@ -46,6 +46,9 @@ module.exports = {
     //   chunks: "all",
     // },
   },
+  externals: {
+    axios: "axios",
+  },
   module: {
     rules: [
       {

@@ -1,4 +1,5 @@
 import form from "./form";
+import result from "./result";
 import "./app.css";
 
 document.addEventListener("DOMContentLoader", async () => {
@@ -6,10 +7,7 @@ document.addEventListener("DOMContentLoader", async () => {
   formEl.innerHTML = form.render();
   document.body.appendChild(formEl);
 
-  import(/* webpackChunkName: "result" */ "./result.js").then(async (m) => {
-    const result = m.default;
-    const resultEl = document.createElement("div");
-    resultEl.innerHTML = await result.render();
-    document.body.appendChild(resultEl);
-  });
+  const resultEl = document.createElement("div");
+  resultEl.innerHTML = await result.render();
+  document.body.appendChild(resultEl);
 });
