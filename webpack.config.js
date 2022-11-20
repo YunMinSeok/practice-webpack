@@ -109,7 +109,7 @@ module.exports = {
       : []),
     new CopyPlugin([
       {
-        from: "./node_modules/axiios/dist/axios.min.js",
+        from: "./node_modules/axios/dist/axios.min.js",
         to: "./axios.min.js",
       },
     ]),
