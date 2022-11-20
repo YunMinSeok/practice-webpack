@@ -42,6 +42,9 @@ module.exports = {
             }),
           ]
         : [],
+    splitChunks: {
+      chunks: "all",
+    },
   },
   module: {
     rules: [
