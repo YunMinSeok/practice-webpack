@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.27.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
