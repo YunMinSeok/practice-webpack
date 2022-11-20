@@ -7,12 +7,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const apiMocker = require("connect-api-mocker");
 const OptimizeCSSAssertsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+
 const mode = process.env.NODE_ENV || "development";
 
 module.exports = {
   mode,
   entry: {
     main: "./src/app.js",
+    result: "./src/result.js",
   },
   output: {
     path: path.resolve("./dist"),
@@ -27,7 +29,7 @@ module.exports = {
     hot: true,
   },
   optimization: {
-    minimiser:
+    minimizer:
       mode === "production"
         ? [
             new OptimizeCSSAssertsPlugin(),
