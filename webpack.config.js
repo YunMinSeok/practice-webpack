@@ -107,5 +107,11 @@ module.exports = {
     ...(process.env.NODE_ENV === "production" // 모듈에서 css 파일 분리
       ? [new MiniCssExtractPlugin({ filename: "[name].css" })]
       : []),
+    new CopyPlugin([
+      {
+        from: "./node_modules/axiios/dist/axios.min.js",
+        to: "./axios.min.js",
+      },
+    ]),
   ],
 };
