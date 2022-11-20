@@ -18,8 +18,11 @@ module.exports = {
   devServer: {
     overlay: true,
     stats: "errors-only",
-    before: (app) => {
-      app.use(apiMocker("/api", "mocks/api"));
+    // before: (app) => {
+    //   app.use(apiMocker("/api", "mocks/api"));
+    // },
+    proxy: {
+      "/api": "http://localhost:8081",
     },
   },
   module: {
